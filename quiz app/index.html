@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colorful Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container" id="quiz">
+    <h1 class="title">🌟 Fun Quiz App 🌟</h1>
+    <h2 id="question">Question will appear here</h2>
+
+    <div class="options">
+      <button class="option" onclick="selectAnswer(0)">Option 1</button>
+      <button class="option" onclick="selectAnswer(1)">Option 2</button>
+      <button class="option" onclick="selectAnswer(2)">Option 3</button>
+      <button class="option" onclick="selectAnswer(3)">Option 4</button>
+    </div>
+
+    <button id="next-btn" onclick="nextQuestion()">Next ➡️</button>
+    <p id="score" class="hidden">🎯 Your Score: <span id="score-value">0</span></p>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
